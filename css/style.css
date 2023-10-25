@@ -183,6 +183,7 @@ background: #404bbf;
     gap: 24px;
 }
 .sect-advans-blocks{
+
     width: calc((100% - 72px) / 4); 
 }
 .advans-title{
@@ -199,6 +200,19 @@ background: #404bbf;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+}
+
+.sect-advans-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 4px;
+border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+background: var(--CLOUD, #F4F4FD);
+width: 260px;
+margin: 0 auto;
+}
+.sect-advans-icon-list{
 
 }
 .sect-team{
@@ -234,8 +248,12 @@ margin-bottom: 72px;
     padding: 32px 0;
 }
 .sect-team-text{
-  align-content: center;
-  padding: 32px 0;
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 .team-name{
     color: #2E2F42;
@@ -280,9 +298,30 @@ margin-bottom: 72px;
     background-color: #FFFFFF;
    width: calc((100% - 48px)/3);
 }
+.social-list{
+    display: flex;
+    column-gap:24px;  
+}
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height:0;
+    background-color: #404BBF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+}
+.social-list-icon{
+    fill: #f4f4fd
+  
+}
 .overlay{
     position: relative;
   overflow: hidden;
+  
 }
 .overlay-text{
     position: absolute;
