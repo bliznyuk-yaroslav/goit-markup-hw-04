@@ -454,7 +454,7 @@ display: flex;
    column-gap: 120px;
 }
 .footer-text-media{
-    color: var(--WHITE, #FFF);
+    color:#FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
