@@ -102,7 +102,7 @@ letter-spacing: 0.02em;
 .menu-navigation-studio:active{
   text-decoration: underline;
 }
-.menu-navigation-studio:hover::after {
+.menu-navigation-studio::after {
     position: absolute;
     display: flex;
     left: 0;
