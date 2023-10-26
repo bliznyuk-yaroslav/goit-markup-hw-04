@@ -38,6 +38,7 @@ padding: 0 15px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08) ;
 }
 .main-cont{
     display: flex;
@@ -77,11 +78,13 @@ margin-right: 76px;
   
 }
 .menu-item{
-
+position: relative; 
+color: #404bbf;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .menu-list-item:hover,
 .menu-list-item:focus{
@@ -93,7 +96,18 @@ letter-spacing: 0.02em;
     padding: 24px 0;
 }
 .menu-navigation-studio:active{
-  text-decoration: underline; 
+  text-decoration: underline;
+}
+.menu-navigation-studio:hover::after {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom:-1px;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+background: var(--OCEAN, #404BBF);
 }
 .menu-address-list{
     font-style: normal;
@@ -109,7 +123,7 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-addres-list-link:hover,
 .menu-addres-list-link:focus{
@@ -123,10 +137,10 @@ max-width: 1440px;
 margin: 0 auto;
 text-align: center;
 padding: 188px 0;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
- background-size:cover;
-background-position: center;
-background-repeat: no-repeat;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .visually-hidden{
