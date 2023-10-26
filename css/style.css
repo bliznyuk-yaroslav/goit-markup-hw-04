@@ -33,6 +33,7 @@ padding: 0 15px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+/* =========================HEADER========================= */
 .main-page{
     display: flex;
     align-items: center;
@@ -89,7 +90,7 @@ letter-spacing: 0.02em;
     display:flex;
     color: #2E2F42;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-list-item:hover,
 .menu-list-item:focus{
@@ -130,6 +131,8 @@ background: var(--OCEAN, #404BBF);
 .menu-addres-list-link:focus{
     color: #404bbf;
 }
+/* ============================HEADER END=========================== */
+/* ==============================HERO============================== */
 .hero{
     display: flex;
 background:#2e2f42;
@@ -193,6 +196,8 @@ margin-bottom: 48px;
 .hero-button:focus{
 background: #404bbf;
 }
+/* ===============================HERO END=========================== */
+
 /* ==============================SECTION 2======================== */
 .advans-lists{
     display: flex;
