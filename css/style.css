@@ -44,7 +44,6 @@ padding: 0 15px;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-    position: relative;
 
 }
 .page-nav{
@@ -88,10 +87,6 @@ letter-spacing: 0.02em;
 .menu-list-item:focus{
     color: #404BBF;
 }
-.menu-list::after{
-   
-
-}
 .menu-list-item{
     display:flex;
     color: #2E2F42;
@@ -99,16 +94,6 @@ letter-spacing: 0.02em;
 }
 .menu-navigation-studio:active{
   text-decoration: underline; 
-}
-.menu-navigation-studio:hover::after {
-    display: flex;
-    position: absolute;
-    bottom:0;
-    content: "";
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-background: var(--OCEAN, #404BBF);
 }
 .menu-address-list{
     font-style: normal;
@@ -124,6 +109,7 @@ background: var(--OCEAN, #404BBF);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-addres-list-link:hover,
 .menu-addres-list-link:focus{
@@ -137,13 +123,10 @@ max-width: 1440px;
 margin: 0 auto;
 text-align: center;
 padding: 188px 0;
-background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url('../images/people-office\ 1.jpg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+ background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
 
 }
 .visually-hidden{
@@ -219,22 +202,22 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.sect-advans-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    background: var(--CLOUD, #F4F4FD);
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
+
 .advas-list-link{
     display: flex;
   width: 264px;
 }
 
+.advand-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
+}
 
 /* ================================SECTION 2 END================== */
 
@@ -245,7 +228,7 @@ letter-spacing: 0.02em;
 background-color: #F4F4FD;
 }
 .sect-team-cont{
-    padding: 32px 0;
+   
 }
 .sect-team-litle{
     color: #2E2F42;
@@ -275,7 +258,7 @@ margin-bottom: 72px;
     background-color: #404BBF;
 }
 .sect-team-text{
-    padding: 32px 16px;
+    padding: 32px 0;
     border-top: none;
 
 }
@@ -349,7 +332,8 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 .social-list{
     display: flex;
-    column-gap:24px;  
+    justify-content: center;
+    gap:24px;  
 }
 .social-list-link{
     display: flex;
@@ -478,7 +462,7 @@ text-transform: uppercase;
 }
 .social-list-footer{
 display: flex;
-column-gap:16px; 
+gap:16px; 
 }
 .social-list-item-footer{
     width: 40px;
